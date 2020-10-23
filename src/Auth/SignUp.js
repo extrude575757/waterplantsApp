@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { axiosWithAuth } from './axiosWithAuth'
-import {BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import {  Link  } from 'react-router-dom';
 
-import styled from 'styled-components'
+// import styled from 'styled-components'
 
 //import InactiveButton from '../Assets/SignUpInactiveButton'
 // import WelcomeLogIn from '../Components/WelcomeLogIn.js';
@@ -132,7 +132,7 @@ const validate = event => {
               <label htmlFor="registerbtn">
                 REGISTER
               </label>
-              <button name="registerbtn" onClick={signUp}>Register</button>
+              <button name="registerbtn" disabled={ButtonDisabled}onClick={signUp}>Register</button>
             </form>
                   
           <Link to='/login'>Already have an account? - Sign In</Link>

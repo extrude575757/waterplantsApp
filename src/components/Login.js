@@ -2,11 +2,15 @@ import React, { useState, useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { StoreContext } from '../contextAPI/Context.js';
 
+
+
+
+
 import { axiosWithAuth } from '../Auth/axiosWithAuth.js';
-import Styled from 'styled-components';
-const Divv = Styled.div`
-  background-color:blue;
-`;
+// import Styled from 'styled-components';
+// const Divv = Styled.div`
+//   background-color:blue;
+// `;
 export default function Login(props) {
   const { userInfo, setUserInfo } = useContext(StoreContext);
   const [form, setForm] = useState({
