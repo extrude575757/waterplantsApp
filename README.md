@@ -2,7 +2,7 @@
 https://github.com/PTBW-Water-My-Plants/front-end
 
 ## Deployed at Netlify
- 
+https://pedantic-lichterman-c811ec.netlify.app/ 
 
 ## Front end
 

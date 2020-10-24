@@ -1,7 +1,8 @@
 import React, { useState, useContext } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import { StoreContext } from '../contextAPI/Context.js';
 
+import { matchPath } from "react-router";
 
 
 
@@ -12,6 +13,7 @@ import { axiosWithAuth } from '../Auth/axiosWithAuth.js';
 //   background-color:blue;
 // `;
 export default function Login(props) {
+  const history = useHistory();
   const { userInfo, setUserInfo } = useContext(StoreContext);
   const [form, setForm] = useState({
     username: userInfo?.username,
@@ -42,7 +44,16 @@ export default function Login(props) {
       });
   };
 const PlantsList = () =>{
-
+  // const match = matchPath(`/auth/register/${form.username}`, {
+  //   path: "/auth/register/:username",
+  //   exact: false,
+  //   strict: true
+  // });
+  
+  
+  
+    history.push(`/auth/register/${form.username}`);
+    // history.replace();
 }
   return (
   
