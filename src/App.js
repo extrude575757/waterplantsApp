@@ -13,13 +13,12 @@ function App() {
   return (
     <Router>
       <Heading />
-      {/* <StyledApp> */}
       <div className="App">
 
         <Switch>
         <Route exact path="/" component={SignUp} />
         <Route exact path="/login" component={Login} />
-        <Route  path="/auth/register/:username" component={PlantsList} />
+       
         {/* <PrivateRoute path="/home" component={HomePage} />
         <PrivateRoute path="/NewEntry" component={NewEntryPage} />
         <PrivateRoute path="/MyEntries" component={EntryArchive} />
@@ -31,7 +30,7 @@ function App() {
 
       </div>
 
-      {/* </StyledApp> */}
+
     </Router>
   );
 }

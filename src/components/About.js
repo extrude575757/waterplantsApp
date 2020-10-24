@@ -11,24 +11,23 @@ const PlantsList = ( ) =>{
             <h1>About Watering the Plants</h1>
             <br />
             <p>
-                <i>The App that never Forgets...</i>
+                <i>App Slogan...</i>
             </p>
             <p>
-                Is an awesome app which will remind you to water your plants and show tips on how to do so. This app has saved 
-                many plant lives and is the app which prides itself on its acheivments. 
+                Details
             </p>
             <h2>
-                Many Great Features
+                Features
             </h2>
             <ul>
                 <li>
-                    Timer Feature always reminds you so you never forget to water those plants
+                    Just a listed detail
                 </li>
                 <li>
-                    Its versitility allows you to schedule the timer function not only for watering plants but for any events that may be going on. Just use the calendar for this and the timer feature will remind you of that event when it comes.
+                    New Detail Listed.
                 </li>
                 <li>
-                    Just remember this is the app that never forgets
+                    Styled detail list
                 </li>
             </ul>
         </div>
