@@ -3,7 +3,7 @@ import React from 'react';
 
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 // import PrivateRoute from './Auth/PrivateRoute';
-import PlantsList from './components/PlantsList';
+// import PlantsList from './components/PlantsList';
 import About from './components/About';
 import SignUp from './Auth/SignUp';
 import Login from './components/Login'

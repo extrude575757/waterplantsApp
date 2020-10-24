@@ -13,7 +13,6 @@ import { axiosWithAuth } from '../Auth/axiosWithAuth.js';
 //   background-color:blue;
 // `;
 export default function Login(props) {
-  const history = useHistory();
   const { userInfo, setUserInfo } = useContext(StoreContext);
   const [form, setForm] = useState({
     username: userInfo?.username,
