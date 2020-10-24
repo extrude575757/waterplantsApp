@@ -137,8 +137,8 @@ const validate = event => {
  
         <div className="App Form">
           <h1>Water My Plants</h1>
-          <h2>Welcome!</h2>
-          <p>Register your account below</p>
+          <h2 className="pale">Welcome!</h2>
+          <p className="pale">Register your account below</p>
               <form className="App" onSubmit={signUp}>
                 <label htmlFor="username">
                   USER NAME
@@ -174,7 +174,7 @@ const validate = event => {
                 onChange={handleChange}
               />
               <label htmlFor="phoneNumber">
-                PHONENUMBER
+                PHONE-NUMBER
                 {errorState.phoneNumber.length >= 11 ? (
           <p className="error App-logo">{errorState.phoneNumber}</p>
         ) : null}

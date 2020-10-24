@@ -21,30 +21,47 @@
   background-color: peru;
 }
 #About.App > p{
+  padding: .6rem;
+  margin: .4rem;
   max-width:55%;
   height: 100%;
   background-color: peachpuff;
 
 }
 #About.App > ul{
+  padding: 1.3rem;
+  margin: .4rem;
+
   max-width:55%;
   height: 100%;
   background-color: peachpuff;
   
 }
+.App > .pale{
+  
+  background-color: palegreen;
+}
 .App.Form{
   /* display: flex;
   align-items: center;
   justify-content: center; */
+  box-shadow: 0 -1px 0 #ec1313, 0 0 2px rgba(212, 209, 30, 0.603),
+  0 2px 4px rgba(0, 0, 0, 0.24);
   background-color: silver;
   height:100%;
   max-width: 40%;
 }
 .App > h1{
+  padding: .6rem;
+  margin: .4rem;
+  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
+  0 2px 4px rgba(0, 0, 0, 0.24);
   
   background-color: silver;
 }
 .App > p{
+  padding: .2rem;
+  margin: .4rem;
   max-width:35%;
   height: 100%;
   background-color:silver ;
@@ -65,6 +82,8 @@
 }
 .App > input{
   box-shadow: .3rem .2rem .1rem grey;
+  max-width: 80%;
+  min-width:25%;
   padding:.1rem;
   margin:.2rem;
 }
