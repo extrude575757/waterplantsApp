@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { NavLink, useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { StoreContext } from '../contextAPI/Context.js';
 
 // import { matchPath } from "react-router";
@@ -31,6 +31,7 @@ export default function Login(props) {
     axiosWithAuth()
       .post('https://watertheplants.herokuapp.com/api/auth/register', form)
       .then(res => {
+        console.log(res);
         console.log(res.data);
         setUserInfo(res.data);
 //setTimeout(() => props.history.push('/Home'), 1000);
@@ -55,6 +56,22 @@ const PlantsList = () =>{
     history.push(`/auth/register/${form.username}`);
     // history.replace();
 }
+/*
+Warning: A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://reactjs.org/link/controlled-components
+input
+form
+div
+Login@http://localhost:3000/static/js/main.chunk.js:730:86
+Route@http://localhost:3000/static/js/1.chunk.js:45048:29
+Switch@http://localhost:3000/static/js/1.chunk.js:45250:29
+div
+Router@http://localhost:3000/static/js/1.chunk.js:44683:30
+BrowserRouter@http://localhost:3000/static/js/1.chunk.js:44303:35
+App
+Had to take out the values for the inputs because of this
+was 
+              value={form.username}
+*/
   return (
   
         <div className="App Form">
@@ -68,7 +85,6 @@ const PlantsList = () =>{
               type="username"
               name="username"
               placeholder="USERNAME"
-              value={form.username}
               onChange={handleChanges}
             />
             <label htmlFor="password">
@@ -78,7 +94,6 @@ const PlantsList = () =>{
               type="password"
               name="password"
               placeholder="PASSWORD"
-              value={form.password}
               onChange={handleChanges}
             />
             <label htmlFor="login">
@@ -88,7 +103,7 @@ const PlantsList = () =>{
             
           </form>
           <button>
-            DON'T HAVE AN ACCOUNT?<NavLink to="/">SIGN UP</NavLink>
+            DON'T HAVE AN ACCOUNT?<Link to="/">SIGN UP</Link>
           </button>
         </div>
       

@@ -15,7 +15,7 @@ const PlantsList = ( ) =>{
             </p>
             <p>
                 Is an awesome app which will remind you to water your plants and show tips on how to do so. This app has saved 
-                many plant lives and is the app prides itself on its acheivments. 
+                many plant lives and is the app which prides itself on its acheivments. 
             </p>
             <h2>
                 Many Great Features

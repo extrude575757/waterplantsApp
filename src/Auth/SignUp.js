@@ -120,10 +120,11 @@ const validate = event => {
     e.preventDefault()
     console.log(credentials)
     axiosWithAuth()
-      .post('/auth/register', usr)
+      .post('https://watertheplants.herokuapp.com/api/auth/register', usr)
       .then(res => {
         localStorage.setItem('token', res.data.token)
         // props.history.push('/home')
+        console.log(res);
         console.log(res.data)
       })
       .catch(err => console.log(err))}
