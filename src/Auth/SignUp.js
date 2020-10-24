@@ -132,11 +132,12 @@ const validate = event => {
     <>
     
       {/* <Logo src={LogoImg} /> */}
-      Water My Plants
+      
     
  
-        <div className="App">
-          <h1>Welcome!</h1>
+        <div className="App Form">
+          <h1>Water My Plants</h1>
+          <h2>Welcome!</h2>
           <p>Register your account below</p>
               <form className="App" onSubmit={signUp}>
                 <label htmlFor="username">

@@ -9,9 +9,9 @@
   height:100%;
 
 }
-#BackImg{
+/* #BackImg{
   background-image: url('/Assets/Green-Tropical-Plant-Wallpaper-Mural-Plain.jpg');
-}
+} */
 #About.App{
   width:70%;
   height:100%;
@@ -20,20 +20,38 @@
 
   background-color: peru;
 }
-.App > p{
-  width:55%;
+#About.App > p{
+  max-width:55%;
   height: 100%;
   background-color: peachpuff;
 
 }
-.App > ul{
-  width:55%;
+#About.App > ul{
+  max-width:55%;
   height: 100%;
   background-color: peachpuff;
   
 }
+.App.Form{
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  background-color: silver;
+  height:100%;
+  max-width: 40%;
+}
+.App > h1{
+  
+  background-color: silver;
+}
+.App > p{
+  max-width:35%;
+  height: 100%;
+  background-color:silver ;
+}
+
 .App > form.App{
-  width:20rem;
+  max-width:20rem;
   box-shadow: .1rem .2rem .1rem grey;
   height:100%;
   background-color: lightgrey;

@@ -57,7 +57,7 @@ const PlantsList = () =>{
 }
   return (
   
-        <div className="App">
+        <div className="App Form">
           <h1>Welcome back!</h1>
           <form className="App" onSubmit={onSubmit}>
             <label htmlFor="username">
